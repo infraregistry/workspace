@@ -1,7 +1,7 @@
-default: infraregistry
+default: dev
 workspaces:
   - name: dev
-    path: ~/workspace/infraregistry
+    path: ~/tmp/infraregistry
     repositories:
       - name: rest
         url: git@github.com:infraregistry/rest.git
@@ -15,3 +15,7 @@ workspaces:
         url: git@github.com:infraregistry/app.git
         branch: main
         path: frontends/app
+      - name: infra
+        url: git@github.com:infraregistry/infra.git
+        branch: main
+        path: infra
